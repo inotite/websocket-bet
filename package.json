@@ -1,0 +1,38 @@
+{
+  "name": "kingodds-grabber",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">= 10.13 <11"
+  },
+  "scripts": {
+    "start": "npm run build && node dist/app",
+    "test": "jest",
+    "lint": "eslint src --ext ts",
+    "build": "npx eslint --ext .ts src && tsc --p ./tsconfig.json"
+  },
+  "dependencies": {
+    "@types/socket.io-client": "^1.4.32",
+    "@typescript-eslint/parser": "^2.0.0",
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "socket.io-client": "^2.2.0",
+    "urlencode": "^1.1.0",
+    "ws": "^7.1.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@types/node": "^10.14.15",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "eslint": "^6.2.1",
+    "jest": "~24.8.0",
+    "prettier": "~1.18.2",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.0",
+    "tsutils": "~3.14.0",
+    "typescript": "~3.5.0",
+    "typescript-eslint-parser": "^22.0.0"
+  }
+}
